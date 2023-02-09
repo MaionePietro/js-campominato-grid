@@ -5,7 +5,7 @@ const preGame = document.querySelector('section');
 const inGame = document.querySelector('section:last-child')
 const grigliaElement = document.querySelector('.griglia')
 const btnElement = document.querySelector('.btn');
-const clickElement = document.querySelectorAll('.cella');
+
 
 btnElement.addEventListener('click', function (){
     preGame.classList.remove('active');
@@ -18,6 +18,10 @@ for (let i = 0; i < numeroCelle; i++) {
     grigliaElement.innerHTML += divString;
 }
 
-clickElement.addEventListener('click', function (){
-    console.log('ciao');
-})
+const clickElement = document.querySelectorAll('.cella');
+
+for(let i=0 ; i <clickElement.length ; i++){
+    clickElement[i].addEventListener('click', function (){
+        clickElement[i].classList.add('trasparenza');
+    })
+}
