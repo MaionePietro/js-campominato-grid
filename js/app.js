@@ -1,8 +1,10 @@
 
-const visibleElement = document.querySelector('section');
+const preGame = document.querySelector('section');
+const inGame = document.querySelector('section:last-child')
 
 const btnElement = document.querySelector('.btn');
 
 btnElement.addEventListener('click', function (){
-    visibleElement.classList.remove('active');
+    preGame.classList.remove('active');
+    inGame.classList.add('active');
 })
