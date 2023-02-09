@@ -1,0 +1,11 @@
+*{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.section_game.active {
+	display: block;
+}
+
+.section_game {
+	display: none;
+}
