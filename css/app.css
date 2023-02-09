@@ -13,7 +13,9 @@
 .griglia > * {
 	/* width: calc(100% / 10); */
 	aspect-ratio: 1;
-	border: 2px solid #0963FD;
+	border: 2px solid white;
+    color: white;
+    background-color: #0963FD;
 	display: flex;
 	justify-content: center;
 	align-items: center;
